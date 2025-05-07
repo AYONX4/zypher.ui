@@ -135,10 +135,11 @@ export function Header() {
                     </Link>
                     <ViewTransitionsLink
                       href="/docs"
-                      className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+                      className="text-sm text-gray-800 hover:text-gray-500 dark:text-gray-300 dark:hover:text-zinc-100 transition-colors"
                     >
                       Installation
                     </ViewTransitionsLink>
+
                   </div>
                 </div>
 
@@ -176,7 +177,7 @@ export function Header() {
                   </ViewTransitionsLink>
                   <ViewTransitionsLink
                     href="/docs"
-                    className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+                    className="text-sm text-gray-800 hover:text-gray-500 dark:text-gray-300 dark:hover:text-zinc-100 transition-colors"
                   >
                     Installation
                   </ViewTransitionsLink>

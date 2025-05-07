@@ -78,7 +78,7 @@ function ElegantShape({
 }
 
 export default function HeroGeometric({
-    badge = "CodeSnippet UI",
+    badge = "Zypher UI",
     title1 = "Elevate Your",
     title2 = "Digital Vision",
 }: {
@@ -160,8 +160,8 @@ export default function HeroGeometric({
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
                     >
                         <Image
-                            src="https://ui.codesnipet.dev/logo.svg"
-                            alt="CodeSnippet UI"
+                            src="https://ui.zypherui.dev/logo.svg"
+                            alt="Zypher UI"
                             width={20}
                             height={20}
                         />

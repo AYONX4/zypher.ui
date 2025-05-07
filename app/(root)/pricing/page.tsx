@@ -463,10 +463,10 @@ export default function PricingPage() {
                     <p className="text-sm text-gray-900 dark:text-gray-100">
                         Have questions? Contact us at{" "}
                         <a
-                            href="mailto:hi@kokonutui.com"
+                            href="mailto:ayonkarjee69@gmail.com"
                             className="text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300 underline underline-offset-4 transition-colors"
                         >
-                            hi@kokonutui.com
+                            ayonkarjee69@gmail.com
                         </a>
                     </p>
                 </motion.div>
@@ -630,7 +630,7 @@ export default function PricingPage() {
                                             onClick={copyEmailToClipboard}
                                         >
                                             <span className="text-sm font-medium">
-                                                hi@kokonutui.com
+                                                ayonkarjee69@gmail.com
                                             </span>
                                             {hasCopied ? (
                                                 <svg

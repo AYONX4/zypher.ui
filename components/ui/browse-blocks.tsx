@@ -14,14 +14,14 @@ export function BrowseBlocksButton() {
     return (
         <Link
             id="browse-blocks-button"
-            href="https://kokonutui.pro/templates"
+            href="https://zypherui.dev/templates"
             className="flex items-center gap-8"
         >
             <motion.div
                 initial={{ x: 200, opacity: 0 }}
                 animate={{ x: 0, opacity: 1, transition: { duration: 0.2 } }}
                 whileHover={{ x: 5, transition: { duration: 0.2 } }}
-                className="relative"
+                className="flex flex-col items-center"
             >
                 <Button
                     className={cn(
@@ -37,7 +37,7 @@ export function BrowseBlocksButton() {
                 >
                     <span className="font-medium flex items-center gap-2">
                         Go to Templates
-                    </span>
+                    </span>   
                     <ArrowRight className="w-5 h-5" />
                 </Button>
             </motion.div>

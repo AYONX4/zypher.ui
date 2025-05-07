@@ -68,28 +68,28 @@ export default function Sidebar() {
             >
                 <div className="h-full flex flex-col">
                     <Link
-                        href="https://ui.codesnipet.dev/"
+                        href="https://zypherui.dev/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="h-16 px-6 flex items-center border-b border-gray-200 dark:border-[#1F1F23]"
                     >
                         <div className="flex items-center gap-3">
                             <Image
-                                src="https://ui.codesnipet.dev/logo.svg"
+                                src="https://ui.zypherui.dev/logo.svg"
                                 alt="Acme"
                                 width={32}
                                 height={32}
                                 className="flex-shrink-0 hidden dark:block"
                             />
                             <Image
-                                src="https://ui.codesnipet.dev/logo-black.svg"
+                                src="https://ui.zypherui.dev/logo-black.svg"
                                 alt="Acme"
                                 width={32}
                                 height={32}
                                 className="flex-shrink-0 block dark:hidden"
                             />
                             <span className="text-lg font-semibold hover:cursor-pointer text-gray-900 dark:text-white">
-                                codesnippetui
+                                Zypher UI
                             </span>
                         </div>
                     </Link>
