@@ -127,15 +127,18 @@ export function Header() {
                       Components
                     </ViewTransitionsLink>
                     <Link
-                      href="https://codesnippetui.pro/templates?utm_source=codesnippetui.com&utm_medium=header"
+                      href="/pricing"
                       target="_blank"
                       className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors flex items-center gap-2"
                     >
-                      Templates
-                      <span className="text-green-500 dark:text-green-400 border border-green-500 dark:border-green-400 rounded-lg px-1 py-0.5 text-xs">
-                        New
-                      </span>
+                      Pricing
                     </Link>
+                    <ViewTransitionsLink
+                      href="/docs"
+                      className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+                    >
+                      Installation
+                    </ViewTransitionsLink>
                   </div>
                 </div>
 
@@ -171,7 +174,13 @@ export function Header() {
                   >
                     Pricing
                   </ViewTransitionsLink>
-                  <ThemeToggle />
+                  <ViewTransitionsLink
+                    href="/docs"
+                    className="text-sm text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+                  >
+                    Installation
+                  </ViewTransitionsLink>
+                      <ThemeToggle />
                 </div>
               </div>
             </div>
