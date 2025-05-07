@@ -1,61 +1,52 @@
 import { cn } from "@/lib/utils";
-import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
-} from "@tabler/icons-react";
+import { Accessibility, Layers, Moon, Move, Paintbrush, Rocket, Terminal, Zap } from "lucide-react";
 
 export function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Composable by Default",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+        "Zypher's components are fully composable with utility-first Tailwind classes and headless design patterns — letting developers easily extend and override styles and behavior",
+      icon: <Layers />,
     },
     {
-      title: "Ease of use",
+      title: "Motion-First Interactions",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+        "Zypher's components are built with motion-first interactions in mind, using Framer Motion to create smooth and engaging animations.",
+      icon: <Move />,
     },
     {
-      title: "Pricing like no other",
+      title: "Dark Mode Done Right",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+        "Zypher provides elegant dark mode variants across all components, with accessible contrasts and one-line toggling support using Tailwind’s dark mode class.",
+      icon: <Moon />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
+      title: "Theming Without the Headache",
+      description: "Built-in support for easy theming using CSS variables + Tailwind config, with a ThemeProvider wrapper to globally control brand colors, border radius, and fonts.",
+      icon: <Paintbrush />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
+      title: "Accessible Out of the Box",
+      description: "Every Zypher component is designed with accessibility in mind — keyboard navigation, screen reader labels, and ARIA compliance included.",
+      icon: <Accessibility />,
     },
     {
-      title: "24/7 Customer Support",
+      title: "Production-Ready Animations",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
+        "Leverage Framer Motion-powered transitions that don’t just look cool — they respect user preferences like reduced motion..",
+      icon: <Zap />,
     },
     {
-      title: "Money back guarantee",
+      title: " CLI spport",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
+        "If you're building at scale, use Zypher’s optional CLI to scaffold components, layouts, or full pages with pre-configured animation and style hooks.",
+      icon: <Terminal />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
-      icon: <IconHeart />,
+      title: "Built on ShadCN. Supercharged by Zypher",
+      description: "Zypher extends the power of ShadCN UI with design-consistent wrappers, extra variants, animations, and layout utilities — making it ideal for production SaaS, dashboards, and startups.",
+      icon: <Rocket />,
     },
   ];
   return (
