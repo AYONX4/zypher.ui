@@ -21,6 +21,7 @@ const CENTERED_COMPONENTS = [
     "action-search-bar",
     "blocks/ai-card-generation",
     "vercel-v0-chat",
+
     // Add more small components here
 ];
 

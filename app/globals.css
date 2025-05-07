@@ -161,13 +161,11 @@ a[href="/docs/components/bento-grid"] {
 }
 
 a[href="/docs/components/bento-grid"]::after {
-  content: "New";
   position: absolute;
   right: 0.2rem;
   top: 50%;
   transform: translateY(-50%);
   background-color: rgba(59, 180, 75, 0.2);
-  color: #3bb44b;
   padding: 0.05rem 0.2rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;

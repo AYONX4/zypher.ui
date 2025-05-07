@@ -1,56 +1,62 @@
 ---
 title: Installation
-description: Getting started with codesnippetui
+description: Getting started with ZypherUI
 icon: ListStart
 ---
 
-### 1. Install utilities
+# Getting Started with ZypherUI
 
+Follow these simple steps to start using ZypherUI components in your project.
 
-All components use [Tailwind CSS v4](https://tailwindcss.com/docs/installation/framework-guides/nextjs), so ensure it's installed in your project.
-Many components also use the `cn` utility function—install it with the following command:
+## Prerequisites
 
-<Tabs items={["bun", "npx", "pnpm"]}>
- 
-```bash tab="bun"
-bunx shadcn@latest add https://ui.codesnipet.dev/r/utils.json 
-```
- 
-```bash tab="npx"
-npx shadcn@latest add https://ui.codesnipet.dev/r/utils.json
-```
+ZypherUI is built on [Tailwind CSS v4](https://tailwindcss.com/docs/installation/framework-guides/nextjs), which must be installed in your project before continuing.
 
-```bash tab="pnpm"
-pnpm dlx shadcn@latest add https://codesnippetui/r/utils.json
-```
+## 1. Install Utilities
 
-</Tabs>
-
-### 2. That's it 🎉
-
-We use [lucide-icons](https://lucide.dev/guide/installation) for most components that include icons, along with some [shadcn/ui](https://ui.shadcn.com/) components. These dependencies will be automatically installed when using the CLI.
-
-For exemple to add `card-05` to your project, it will be easy as:
+Many components use the `cn` utility function for conditional class names. Install it with:
 
 <Tabs items={["bun", "npx", "pnpm"]}>
  
 ```bash tab="bun"
-bunx shadcn@latest add https://ui.codesnipet.dev/r/card-05.json
+bunx shadcn@latest add https://ui.codesnippet.dev/r/utils.json 
 ```
  
 ```bash tab="npx"
-npx shadcn@latest add https://ui.codesnipet.dev/r/card-05.json
+npx shadcn@latest add https://ui.codesnippet.dev/r/utils.json
 ```
 
 ```bash tab="pnpm"
-pnpm dlx shadcn@latest add https://ui.codesnipet.dev/r/card-05.json
+pnpm dlx shadcn@latest add https://ui.codesnippet.dev/r/utils.json
 ```
 
 </Tabs>
 
-_While we provide a convenient 'copy' button for the code, we strongly recommend using the CLI for installing components, as it ensures all necessary files are included._
+## 2. Add Components
 
-Add to your page and it works!
+Once utilities are installed, you can add individual components using the shadcn CLI:
+
+<Tabs items={["bun", "npx", "pnpm"]}>
+ 
+```bash tab="bun"
+bunx shadcn@latest add https://ui.codesnippet.dev/r/card-05.json
+```
+ 
+```bash tab="npx"
+npx shadcn@latest add https://ui.codesnippet.dev/r/card-05.json
+```
+
+```bash tab="pnpm"
+pnpm dlx shadcn@latest add https://ui.codesnippet.dev/r/card-05.json
+```
+
+</Tabs>
+
+> **Note:** While code snippets can be copied manually, we strongly recommend using the CLI for installing components to ensure all dependencies are properly included.
+
+### Using the Component
+
+After installation, import and use the component in your page:
 
 ```jsx
 import Card05 from "@/components/codesnippetui/card-05";
@@ -60,34 +66,34 @@ export default function Page() {
 }
 ```
 
-import { Tab, Tabs } from "fumadocs-ui/components/tabs";
+## 3. Working with Blocks
 
-### 3. Blocks
-
-Blocks are a set of components to make a complete blocks, they contain multiples files. To install them it is mandatory to use the `cli`. For example it you'd like to install `ai-card-generation` block:
+Blocks are comprehensive components that include multiple files. They must be installed using the CLI:
 
 <Tabs items={["bun", "npx", "pnpm"]}>
  
 ```bash tab="bun"
-bunx shadcn@latest add https://ui.codesnipet.dev/r/ai-card-generation.json
+bunx shadcn@latest add https://ui.codesnippet.dev/r/ai-card-generation.json
 ```
  
 ```bash tab="npx"
-npx shadcn@latest add https://ui.codesnipet.dev/r/ai-card-generation.json
+npx shadcn@latest add https://ui.codesnippet.dev/r/ai-card-generation.json
 ```
 
 ```bash tab="pnpm"
-pnpm dlx shadcn@latest add https://ui.codesnipet.dev/r/ai-card-generation.json
+pnpm dlx shadcn@latest add https://ui.codesnippet.dev/r/ai-card-generation.json
 ```
 
 </Tabs>
 
-Then, add to your page and it works!
+### Using Blocks
+
+Once installed, blocks can be used like regular components:
 
 ```jsx
 /**
- * AICardGeneration require 5 additional components
- * that will be automatically installed with the CLI.
+ * AICardGeneration includes 5 additional components
+ * that are automatically installed with the CLI.
  */
 import AICardGeneration from "@/components/codesnippetui/AICardGeneration";
 
@@ -96,26 +102,39 @@ export default function Page() {
 }
 ```
 
-### 4. Optionnal dependencies
+## 4. Dependencies
 
-Some components require additional libraries, listed at the bottom of each components. Make sure to install them to ensure the component works properly.
+### Core Dependencies
 
-### 5. Monorepo
+CodeSnippetUI uses:
 
-For monorepo `shadcn/ui` CLI contain the options `-c` to the path to your workspace for exemple:
+- [Lucide Icons](https://lucide.dev/guide/installation) - For component icons
+- [shadcn/ui](https://ui.shadcn.com/) - For base components
+
+These are automatically installed when using the CLI.
+
+### Component-Specific Dependencies
+
+Some components require additional libraries, which are listed on each component's documentation page. Be sure to install these dependencies to ensure proper functionality.
+
+## 5. Monorepo Setup
+
+When working in a monorepo, use the `-c` flag to specify your workspace path:
 
 <Tabs items={["bun", "npx", "pnpm"]}>
  
 ```bash tab="bun"
-bunx shadcn@latest add https://ui.codesnipet.dev/r/card-05.json -c ./apps/www
+bunx shadcn@latest add https://ui.codesnippet.dev/r/card-05.json -c ./apps/www
 ```
  
 ```bash tab="npx"
-npx shadcn@latest add https://ui.codesnipet.dev/r/card-05.json -c ./apps/www
+npx shadcn@latest add https://ui.codesnippet.dev/r/card-05.json -c ./apps/www
 ```
 
 ```bash tab="pnpm"
-pnpm dlx shadcn@latest add https://ui.codesnipet.dev/r/card-05.json -c ./apps/www
+pnpm dlx shadcn@latest add https://ui.codesnippet.dev/r/card-05.json -c ./apps/www
 ```
 
 </Tabs>
+
+import { Tab, Tabs } from "fumadocs-ui/components/tabs";

@@ -15,11 +15,11 @@ interface ProjectLink {
 export function Footer() {
   const socialLinks = [
     {
-      href: "#",
+      href: "https://github.com/AYONX4",
       icon: <LucideGithub className="w-5 h-5 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" />,
     },
     {
-      href: "#",
+      href: "https://x.com/AyonXzz14",
       icon: <XIcon className="w-5 h-5 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" />,
     },
   ];
@@ -38,7 +38,7 @@ export function Footer() {
 
         {/* Copyright Notice */}
         <p className="text-sm text-zinc-500 dark:text-zinc-400">
-          &copy; {new Date().getFullYear()} Codesnippet. All rights reserved.
+          &copy; {new Date().getFullYear()} Zypher. All rights reserved.
         </p>
       </div>
     </footer>

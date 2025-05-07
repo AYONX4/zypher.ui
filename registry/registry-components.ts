@@ -1200,18 +1200,6 @@ export const component: Registry = [
         ],
     },
     {
-        name: "background-circles",
-        type: "registry:component",
-        dependencies: ["motion"],
-        registryDependencies: [],
-        files: [
-            {
-                path: "components/codesnippetui/background-circles.tsx",
-                type: "registry:component",
-            },
-        ],
-    },
-    {
         name: "background-paths",
         type: "registry:component",
         dependencies: ["motion"],
@@ -1283,6 +1271,18 @@ export const component: Registry = [
         files: [
             {
                 path: "components/codesnippetui/avatar-picker.tsx",
+                type: "registry:component",
+            },
+        ],
+    },
+    {
+        name: "testimonials",
+        type: "registry:component",
+        dependencies: ["lucide-react", "motion", "react", "framer-motion"],
+        registryDependencies: [],
+        files: [
+            {
+                path: "components/codesnippetui/testimonials.tsx",
                 type: "registry:component",
             },
         ],

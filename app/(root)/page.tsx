@@ -1,7 +1,6 @@
-// import EventToast from "@/components/event-toast";
-import { ComponentShowcaseCard } from "@/components/landing/component-showcase-card";
+
+import EventToaster from "@/components/event-toast";
 import { FeaturesSectionDemo } from "@/components/landing/FeatureSection";
-import { FloatingDockDemo } from "@/components/landing/Floating-ock";
 import { HeroSection } from "@/components/landing/hero";
 import { InteractivePreview } from "@/components/landing/interactive-preview";
 import { BuildInterfacesCard } from "@/components/landing/interfaceCards";
@@ -14,14 +13,12 @@ export default function Home() {
       <div className="grid grid-rows-[auto_1fr_auto] min-h-screen px-6 lg:px-4 gap-4 sm:gap-12">
         <HeroSection />
       </div>
-      <FloatingDockDemo />
       <FeaturesSectionDemo />
-      {/* <ComponentShowcaseCard className="mx-auto w-full max-w-7xl px-4 sm:px-6 py-12 md:py-16 lg:py-20" /> */}
       <InteractivePreview />
       <BuildInterfacesCard className="mx-auto w-full max-w-7xl px-4 sm:px-6 py-12 md:py-16 lg:py-20" />
 
       <TechnologyBadges />
-      {/* <EventToast /> */}
+      <EventToaster />
     </main>
   );
 }
